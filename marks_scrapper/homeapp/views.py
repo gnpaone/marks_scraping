@@ -11,6 +11,6 @@ def hello_world(request):
         return render(
             request,
             "homeapp/result.html",
-            {"score": details[0], "name": details[1], "hall_ticket_number": details[2]},
+            details,
         )
     return render(request, "homeapp/hello.html")
